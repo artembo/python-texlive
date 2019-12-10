@@ -8,14 +8,13 @@ RUN apt-get update && apt-get -y install --no-install-recommends --no-install-su
  texlive-latex-extra \
  texlive-fonts-extra \
  texlive-extra-utils \
- imagemagick \
- inkscape \
+ librsvg2-bin \
  xzdec \
  cmake \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
-RUN pip install sphinx==1.8.5 sphinx-intl sphinx_rtd_theme awscli
+RUN pip install sphinx==1.8.5 sphinx-intl sphinx_rtd_theme awscli sphinxcontrib-svg2pdfconverter==1.0.1
 
 RUN mkdir /doc
 WORKDIR /doc

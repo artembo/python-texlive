@@ -8,8 +8,7 @@ RUN apt-get update && apt-get -y install --no-install-recommends --no-install-su
  texlive-latex-extra \
  texlive-fonts-extra \
  texlive-extra-utils \
- imagemagick \
- inkscape \
+ librsvg2-bin \
  xzdec \
  cmake \
  && apt-get clean \
